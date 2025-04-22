@@ -22,10 +22,6 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 
 const ServiceCatering = () => {
   const {t}=useTranslation();
-  const handleClick = () => {
-    const form = document.getElementById("form");
-    if (form) form.scrollIntoView({ behavior: "smooth" });
-  };
 
   const requestFormRef = useRef<HTMLDivElement>(null);
     const scrollToRequestForm = () => {

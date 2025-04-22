@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../../store/api";
-import { useTranslation } from "react-i18next";
 
 interface Image {
   id: number;
@@ -62,7 +61,6 @@ interface ApiResponse {
 }
 
 const Menu: React.FC = () => {
-  const { i18n } = useTranslation();
   const [data, setData] = useState<ApiResponse | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -71,7 +69,7 @@ const Menu: React.FC = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await fetchData(i18n.language); // Pass the current language
+        const response = await fetchData(); 
         setData(response);
   
         // Set the first category as active if available
@@ -87,7 +85,7 @@ const Menu: React.FC = () => {
     };
   
     getData();
-  }, [i18n.language]);
+  }, []);
 
   const handleBreadcrumbClick = (categoryName: string) => {
     setActiveCategory(categoryName);
