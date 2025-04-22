@@ -1,0 +1,78 @@
+/* Root Colors */
+:root {
+  --color-white: #FFFFFF;
+  --color-dark-grey: #4F4F4F;
+  --color-mid-grey: #667085;
+  --color-light-grey: #344054;
+  --color-red: #C31818;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroContent {
+  text-align: center;
+  color: var(--color-white);
+  width: 100%; 
+  max-width: 1120px;
+}
+
+.heroContent h1 {
+  max-width: 800px; 
+  margin: 0 auto 40px auto; 
+}
+
+.body1 {
+  max-width: 1120px; 
+  margin: 0 auto;
+  padding: 0 40px; 
+  margin-bottom: 40px; 
+}
+
+.ctaButton {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  margin-right: 20px;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+}
+
+.ctaButton2 {
+  background-color: var(--color-white);
+  color: var(--color-red);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.ctaButton2:hover {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white)
+}
+
+
+@media (max-width: 1200px) {
+  .heroContent h1, .body1 {
+    padding: 0 20px; 
+  }
+}

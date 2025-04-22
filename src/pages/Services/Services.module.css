@@ -1,0 +1,106 @@
+.gastro__hero_bg {
+  background: url("../../assets/service-page-cover-image-gastro.jpeg")
+    rgba(17, 13, 16, 0.3);
+  height: 670px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 980px;
+  margin: auto;
+  height: 500px;
+}
+.hero__description {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero__btn {
+  width: 174px;
+  height: 47px;
+  padding: 10px 24px 10px 24px;
+  gap: 0px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #c31818;
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  cursor: pointer;
+}
+.hero__btn:hover {
+  background: #9a1717;
+  transition: 0.5s ease-out;
+  transform: translateY(-3px);
+}
+.gastro__discover__content {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 100px;
+}
+.gain__features {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.gain__content {
+  text-align: center;
+}
+.workshop__features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.feature__content {
+  padding: 30px 0;
+  width: 418px;
+}
+.feature__content ul {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-left: 40px;
+}
+.feature__content span,
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.feature__image img {
+  height: 545px;
+  border-radius: 1.5rem;
+}
+.view__menu {
+  color: #c31818;
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

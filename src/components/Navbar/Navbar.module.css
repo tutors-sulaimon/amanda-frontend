@@ -1,0 +1,254 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 49;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.logoImage:hover {
+  transform: scale(1.1);
+}
+
+.navItems {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems li {
+  margin: 0 30px;
+}
+
+.navItems a,
+.navItems button {
+  font-family: "Playfair Display", serif;
+  color: var(--color-dark-grey);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  transition: color 0.3s;
+}
+
+.navItems a:hover,
+.navItems button:hover {
+  color: #c41e3a;
+}
+
+.servicesDropdown {
+  position: relative;
+}
+
+.servicesDropdown button {
+  font-family: "Playfair Display", serif;
+  color: var(--color-dark-grey);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  transition: color 0.3s;
+}
+
+.dropdownArrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdownContent li {
+  margin: 0;
+  padding: 5px 20px;
+  white-space: nowrap;
+}
+
+.dropdownContent a {
+  font-family: "Playfair Display", serif;
+  color: var(--color-light-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 10px;
+  display: block;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.dropdownContent a:hover {
+  color: #c41e3a;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.languageFlags {
+  display: flex;
+  margin-right: 20px;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.contactButton {
+  font-family: "Playfair Display", serif;
+  width: 136.083px;
+  height: 47px;
+  background-color: #c41e3a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.contactButton:hover {
+  background-color: var(--color-dark-grey);
+  color: white;
+}
+
+.flag {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+
+.showMenu {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.showMenu li {
+  margin: 15px 0;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.contactTextMenu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navItems li {
+    margin: 0 10px;
+  }
+
+  .showMenu li {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 998px) {
+  .logo {
+    flex: 1;
+  }
+
+  .navItems {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 30px;
+    color: var(--color-dark-grey);
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .rightSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .languageFlags {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .contactButton {
+    margin-left: 10px;
+  }
+
+  .menuIcon {
+    order: 2;
+  }
+
+  .languageFlags,
+  .contactButton {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactButton {
+    display: none;
+  }
+
+  .contactTextMenu {
+    display: block; /* Show "Contact Us" text in the menu */
+  }
+}

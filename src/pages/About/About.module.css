@@ -1,0 +1,10 @@
+.heading_l {
+  font-family: Playfair Display;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 57px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4f4f4f;
+}

@@ -1,0 +1,33 @@
+.text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #4f4f4f;
+}
+
+.heading_l {
+  font-family: Playfair Display;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 57px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4f4f4f;
+}
+
+.text_sm {
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4f4f4f;
+}
+
+img{
+  aspect-ratio: 563/642;
+}

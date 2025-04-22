@@ -1,0 +1,135 @@
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.galleryTitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: var(--color-dark-grey);
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 120%;
+  margin: 0;
+  padding: clamp(40px, 8vh, 100px) 0;
+}
+
+.galleryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.galleryGrid > div {
+  flex: 0 0 auto;
+  height: 380px;
+  overflow: hidden;
+}
+
+/* Row 1 & 2: Five images per row */
+.galleryGrid > div:nth-child(-n+10) {
+  width: calc(20% - 16px);
+}
+
+/* Row 3: Four images */
+.galleryGrid > div:nth-child(n+11):nth-child(-n+14) {
+  width: calc(25% - 15px);
+}
+
+/* Row 4: Three images */
+.galleryGrid > div:nth-child(n+15):nth-child(-n+17) {
+  width: calc(33.333% - 14px);
+}
+
+/* Row 5: Two images */
+.galleryGrid > div:nth-child(18) {
+  width: calc(60% - 10px);
+}
+.galleryGrid > div:nth-child(19) {
+  width: calc(40% - 10px);
+}
+
+/* Row 6 & 7: Four images per row */
+.galleryGrid > div:nth-child(n+20):nth-child(-n+27) {
+  width: calc(25% - 15px);
+}
+
+/* Row 8: Two images */
+.galleryGrid > div:nth-child(28),
+.galleryGrid > div:nth-child(29) {
+  width: calc(50% - 10px);
+}
+
+/* Row 9: Four images */
+.galleryGrid > div:nth-child(n+30):nth-child(-n+33) {
+  width: calc(25% - 15px);
+}
+
+/* Row 10: Five images */
+.galleryGrid > div:nth-child(n+34):nth-child(-n+38) {
+  width: calc(20% - 16px);
+}
+
+/* Row 11: Three images */
+.galleryGrid > div:nth-child(n+39):nth-child(-n+41) {
+  width: calc(33.333% - 14px);
+}
+
+@media (max-width: 1200px) {
+  .galleryGrid {
+    gap: 15px;
+  }
+  
+  .galleryGrid > div {
+    height: 320px;
+  }
+
+  /* Adjust to 4 images per row */
+  .galleryGrid > div:nth-child(-n+10),
+  .galleryGrid > div:nth-child(n+34):nth-child(-n+38) {
+    width: calc(25% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .galleryGrid {
+    gap: 10px;
+  }
+
+  .galleryGrid > div {
+    height: 280px;
+  }
+
+  /* 2 images per row for most cases */
+  .galleryGrid > div {
+    width: calc(50% - 5px) !important;
+  }
+
+  /* Full width for special cases */
+  .galleryGrid > div:nth-child(18),
+  .galleryGrid > div:nth-child(28),
+  .galleryGrid > div:nth-child(29) {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryGrid {
+    gap: 10px;
+  }
+
+  .galleryGrid > div {
+    width: 100% !important;
+    height: 260px;
+  }
+}

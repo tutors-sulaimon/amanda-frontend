@@ -1,0 +1,86 @@
+.serviceContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+.cardContainer {
+  width: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #c31818; /* Default border color */
+  background-color: #e3e3e4; /* Default background color */
+}
+.cardContainerHovered {
+  border: 1px solid #4f4f4f; /* Hover border color */
+  background-color: #ffffff; /* Hover background color */
+}
+.cardImg {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+}
+.cardText {
+  padding: 24px;
+  flex-grow: 1;
+}
+.cardTitle {
+  font-size: 24px;
+  font-family: serif;
+  margin-bottom: 12px;
+}
+.cardDescription {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #667085;
+}
+.cardButton {
+  width: 100%;
+  padding: 10px 24px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  background-color: #c31818;
+  color: #ffffff;
+}
+.cardButton.hovered {
+  background-color: #4f4f4f;
+}
+
+@media (max-width: 1200px) {
+  .serviceContainer {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .serviceContainer {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
