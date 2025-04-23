@@ -336,7 +336,7 @@ const RequestForm: React.FC<RequestFormProps> = ({ haveBg = true }) => {
           </div>
 
           <ReCAPTCHA
-            sitekey="6LfvAN4qAAAAAOXrJsv9MjQ9o5IAJ1dorSTwqdqK" // Replace with your site key
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={handleCaptchaChange}
             className="my-4"
           />
