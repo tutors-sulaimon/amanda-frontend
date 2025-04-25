@@ -191,6 +191,7 @@ const RequestForm: React.FC<RequestFormProps> = ({ haveBg = true }) => {
           icon: "success",
           title: t("Your request has been successfully submitted!"),
           text: t("We will get back to you as soon as possible."),
+          confirmButtonText: '<span style="padding: 0 20px;">OK</span>',
         }).then(() => {
           // Reset form after successful submission
           setFormData({
@@ -214,7 +215,9 @@ const RequestForm: React.FC<RequestFormProps> = ({ haveBg = true }) => {
       Swal.fire({
         icon: "error",
         title: t("Oops! Something went wrong while submitting your request."),
-        text: t("Please try again later."),});
+        text: t("Please try again later."),
+        confirmButtonText: '<span style="padding: 0 20px;">OK</span>',
+      });
     }
   }
   // 🔹 Render
