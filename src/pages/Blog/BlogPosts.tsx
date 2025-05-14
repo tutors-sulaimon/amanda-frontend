@@ -71,11 +71,12 @@ const BlogPosts: React.FC = () => {
           <div
             key={blog.documentId}
             className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
-            style={{ minHeight: "400px" }} 
+            style={{ minHeight: "400px" }}
           >
             {blog.coverImage?.url && (
               <img
-                src={`${API_BASE_URL}${blog.coverImage.url}`}
+                src={blog.coverImage.url}
+                //src={`${API_BASE_URL}${blog.coverImage.url}`}
                 alt={blog.title}
                 className="w-full h-48 object-fit: cover"
               />
